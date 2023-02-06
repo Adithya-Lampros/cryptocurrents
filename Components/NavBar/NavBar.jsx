@@ -69,9 +69,7 @@ const NavBar = () => {
           </div>
           {account ? (
             //  onClick={() => setOpenTokenBox(true)}
-            <button>
-              {account.slice(0, 20)}..
-            </button>
+            <button>{account.slice(0, 20)}..</button>
           ) : (
             <button onClick={() => setOpenModel(true)}>Connect</button>
           )}
